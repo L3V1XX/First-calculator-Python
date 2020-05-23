@@ -2,24 +2,21 @@ from tkinter import *
 import parser
 
 expression = ""
-
 root = Tk()
 root.title("Calculadora Levi")
 root.geometry("400x600")
 root.resizable(False,False)
-root.configure(background = "gray42")
+root.configure(background = "LightSeaGreen")
 
 # Caracteristicas para los botones
-
 color_boton = "gray99"
 width_boton = 10
 high_boton = 3
 
-
-
 equation = StringVar()
 
-display = Entry(root,font = ("arial",20,"bold"),width = 22,borderwidth = 10, background = "Gray100", textvariable = equation)
+# Para editar el rectangulo de introdución de datos
+display = Entry(root,font = ("arial",20,"bold"),width = 22,borderwidth = 10,background = "LightBlue1", textvariable = equation)
 display.place (height = 90)
 display.grid(row = 0,column = 0,columnspan = 4 ,padx = 25, pady = 20)
 
